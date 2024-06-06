@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+      * {
+        font-family: 'Work Sans', sans-serif;
+      }
+    </style>
+    
+
+  </head>
+  <body  >
+    <header class=" w-62 h-62  bg-amber-50 flex justify-between items-center p-7 ">
+      <div class=" grid justify-items-center  mx-auto w-45 p-4 gap-4 ">
+        <p class="mt-auto text-center text-2xl  mt-5 ">---SALE FEVER---</p>
+        <p class=" mx-36  text-center text-5xl font-bold  ">Purchase TK 200 or above & get <span class="text-pink-500">20% off</span>
+          <div class=" flex justify-start gap-4 gap-4 items-center mb-20  ">
+            <p>Use Promo Code</p>
+            <button class="btn btn-secondary text-white ">SELL200</button>
+          </div>
+         </p>
+       
+
+       
+         
+
+      </div>
+      <div>
+        <img class=" w-42 h-42" src="images/Summer 1.png" alt="">
+      </div>
+       
+    </header>
+
+        <main class=" md: pl-4 pr-2    lg: bg-slate-200 px-48    ">
+              <div>
+                <p class=" font-semibold text-4xl  ">Kitchenware </p>
+
+              </div>
+
+            <!-- card div  -->
+            <div   class="   lg: flex justify-between gap-5   ">
+              <div class="     flex flex-row gap-3 w-3/4 h-1/2 " >
+                <!-- card start -->
+                <div   class="    card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img  class="bg-slate-200 " src="images/prod1.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <!-- rating -->
+                  <br>
+                  <div  class=" flex flex-row    self-center   ">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h2  id="card-text" class="card-title">K. Accessories</h2>
+                    <p> <span class="taka"> 39.00</span> TK</p>
+                  
+                  </div>
+                </div>
+                <!-- card here -->
+                <div   class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img class="bg-slate-200 "  src="images/prod2.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <br>
+                  <!-- rating -->
+                  <div  class=" flex flex-row    self-center   ">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h2  id="card-text" class="card-title">K. Accessories</h2>
+                    <p > <span class="taka">25.00</span>  TK</p>
+                  
+                  </div>
+                </div>
+                <!-- card end -->
+                <!-- card start -->
+                <div    class="card w-96 bg-base-100 shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img  class="bg-slate-200 " src="images/prod3.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <br>
+                  <!-- rating -->
+                  <div  class=" flex flex-row    self-center   ">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame.svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                    <img src="images/Frame (1).svg" alt="">
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h2  id="card-text" class="card-title">Home Cooker</h2>
+                    <p> <span class="taka" >49.00</span> TK</p>
+                  
+                  </div>
+                </div>
+                <!-- card end -->
+    
+    
+               </div> 
+
+
+               
+
+                          
+                  <!-- calculation section -->
+
+
+              <div class=" bg-white    w-80 h-24  ">
+                <p class=" bg-white p-2 " >Have coupon?</p>
+                <div class=" flex p-2 ">
+                  <input id="coupon-code" type="text" placeholder="Coupon code" class="input input-bordered  " /> <button id="apply-btn" class="btn btn-secondary w-14 h-12 text-white " disabled>Apply</button>
+                </div>
+               
+                    <br>
+                    
+              <div class=" bg-white  " >
+                <div>
+
+                  
+                  <div id="list" class=" p-4  " >
+
+                  </div>
+
+
+                </div>
+                <div class="gap-2 p-2  ">
+
+                  <p class=" ">
+                    Total price: <span id="total-price" >00</span>  TK
+                   
+                  </p>
+                  <p >
+                    Discount : <span id="discount-place">00</span>   TK
+                  </p>
+                  <p>
+                    Total : <span id="total">00</span>  TK
+                  </p>
+                        <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                            <button id="purchase-btn" class="btn btn-secondary  w-72 h-14 text-white "  disabled       class="btn" onclick="my_modal_1.showModal()">Make Purchase</button>
+                            <dialog id="my_modal_1" class="modal   ">
+                              <form method="dialog" class="modal-box  grid justify-items-center    ">
+                                <img class=""  src="images/congo.png" alt="">
+                                <h3 class="font-bold text-lg">Congratulations</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <div class="modal-action">
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn btn-secondary text-white ">Go Home</button>
+                                </div>
+                              </form>
+                            </dialog>
+
+                        </div>
+                          
+                         
+
+                  <!-- <button id="purchase-btn" class="btn btn-secondary  w-72 h-14 text-white "  disabled>Make Purchase</button> -->
+                </div>
+             </div>
+            </div>
+
+
+           </div>
+
+
+           <!-- second card area -->
+            <br>
+           <div>
+            <p class=" font-semibold text-4xl  ">Sportswear</p>
+
+          </div>
+
+        <!-- card div  -->
+        <div   class=" flex justify-between gap-5   ">
+          <div class=" flex flex-row gap-3 w-3/4 h-1/2 " >
+            <!-- card start -->
+            <div   class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img  class="bg-slate-200 " src="images/prod4.png" alt="" class="rounded-xl" />
+              </figure>
+              <br>
+              <br>
+              <!-- rating -->
+              <div  class=" flex flex-row    self-center   ">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                
+                <img src="images/Frame (1).svg" alt="">
+                <img src="images/Frame (1).svg" alt="">
+              </div>
+              <div class="card-body items-center text-center">
+                <h2  id="card-text" class="card-title">Sports Back Cap</h2>
+                <p> <span class="taka">40.00</span> TK</p>
+              
+              </div>
+            </div>
+            <!-- card here -->
+            <div    class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img  class="bg-slate-200 "  src="images/prod5.png" alt="" class="rounded-xl" />
+              </figure>
+              <br>
+              <!-- rating -->
+              <div  class=" flex flex-row    self-center   ">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame (1).svg" alt="">
+                <img src="images/Frame (1).svg" alt="">
+              </div>
+              <div class="card-body items-center text-center">
+                <h2  id="card-text" class="card-title">Full Jersey Set</h2>
+                <p> <span class="taka" >69.00</span>TK</p>
+              
+              </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div   class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img class="bg-slate-200 "   src="images/prod6.png" alt="" class="rounded-xl" />
+              </figure>
+              <br>
+              <!-- rating -->
+              <div  class=" flex flex-row    self-center   ">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame.svg" alt="">
+                <img src="images/Frame (1).svg" alt="">
+                <img src="images/Frame (1).svg" alt="">
+              </div>
+              <div class="card-body items-center text-center">
+                <h2  id="card-text" class="card-title">Sports cates</h2>
+                <p> <span class="taka" >159.00</span> TK</p>
+              
+              </div>
+            </div>
+            <!-- card end -->
+
+
+           </div> 
+         
+  
+       
+
+             
+
+        </main>
+
+
+      <script src="index.js"></script>
+  </body>
+</html>
